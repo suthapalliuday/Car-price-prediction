@@ -13,4 +13,70 @@ Give a happy face to the customers by suggesting a reasonable price for both buy
 
 ### Data Understanding
 Dataset has been taken from the Kaggle.com to build a ML model. We have a total of 13 attributes including the price of the car which is a dependent on all the other attributes. The length of the dataset id 6019.
+The url of the dataset is https://www.kaggle.com/code/billumillu/predicting-costs-of-used-cars-machinehack/data
 
+### Attributes in the dataset.
+
+Name of the car
+
+Location of the car
+
+Year of manufacturing
+
+Kilometers_Driven
+
+Fuel_Type
+
+Transmission
+
+Owner_Type
+
+Mileage
+
+Engine
+
+Power
+
+Seats
+
+New_Price
+
+Price
+
+
+### Grouping the cars.
+![image](https://user-images.githubusercontent.com/96214945/162640613-1ca1c0bf-109a-49ad-8efc-1891e88c7e57.png)
+
+### Data Statistics
+![image](https://user-images.githubusercontent.com/96214945/162640642-cf5ca785-b8fd-4772-b529-709e83678e77.png)
+
+
+### Data preparation
+
+Make the data ready to be fit for the model and then predict the results of new values.
+
+Convert attributes to required datatypes.
+
+Handle null values.
+
+Remove duplicates.
+
+Handing Categorical variables using duplicates().
+
+Create correlation map of the data frame object and then heatmap to get better understanding of the attributes and their importance in predicting the dependent variable.
+
+#### Data preparation – Datatype conversion
+Attributes like Mileage, Engine, Power should be of floating data type and its in string format with some letters on it. We need to remove that units and convert it into float.
+![image](https://user-images.githubusercontent.com/96214945/162640696-492ae0b2-3752-4be0-b192-aba2f16645c3.png)
+
+
+#### Data preparation – Handle null values
+Null values creates a negative scoring for a regression while building a model.
+We need to fill them with mean/median of the data from for the same column we are filling null values.
+Incase of inappropriate to fill for the mean data we need to remove it.
+For example, we can’t fill 5195 rows of data based on the mean of 824 rows.
+
+
+#### Data preparation – Categorical Duplicating
+Categorical variables should be converted into numerical form for applying the machine learning model without changing their value in predicting the dependent variables.
+Duplicating is the process to make categorical variables valuable while creating a new ML model 
