@@ -18,6 +18,7 @@ The url of the dataset is https://www.kaggle.com/code/billumillu/predicting-cost
 ### Attributes in the dataset.
 
 Name of the car
+
 Location of the car
 
 Year of manufacturing
