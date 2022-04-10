@@ -80,3 +80,19 @@ For example, we can’t fill 5195 rows of data based on the mean of 824 rows.
 #### Data preparation – Categorical Duplicating
 Categorical variables should be converted into numerical form for applying the machine learning model without changing their value in predicting the dependent variables.
 Duplicating is the process to make categorical variables valuable while creating a new ML model 
+
+
+### Modelling
+Steps to build a machine learning model
+Data Splitting
+Deciding on type of model that fit for our data and problem statement. (Regression/Classification/Clustering etc..)
+Creating different types of models and evaluate them using the test data and decide on best model that fits for the data.
+Visualizing the difference between prediction and actual values.
+
+### Train and test split
+Need to split the data into train and test dataset where train dataset is used to build a model and test dataset is used to evaluate a model.
+We have used the train_test_split function of sklearn preprocessing module of python with test size as 20% of the whole data and train size as 80%.
+Used the random_state as 42 to make the split of data set even every time we run the train test split function.
+
+### Applied three machine learning models like Linear regression, KNN regression, RFR.
+Used the BayesSearchCV of the skpot library of python to estimate the best sutiable hyperparameters for the models built.
